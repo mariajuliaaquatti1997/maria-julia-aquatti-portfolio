@@ -2,25 +2,26 @@ import React, { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import Arrow from "./Arrow";
 import { useLanguage } from "../i18n";
+import { publicImage } from "../assets";
 
 const projects = [
   {
-    title: "Free Finder", category: "UI/UX Design", type: "Mobile App", year: "2024", imageClass: "project-freefinder", image: "/images/free-finder-cover-01.webp.png",
+    title: "Free Finder", category: "UI/UX Design", type: "Mobile App", year: "2024", imageClass: "project-freefinder", image: publicImage("free-finder-cover-01.webp.png"),
     description: "Uma experiência mobile pensada para conectar pessoas a lugares e experiências que combinam com elas.",
     case: { challenge: "Transformar a busca por lugares em uma descoberta local simples e inspiradora.", role: "Pesquisa, fluxos, wireframes e interface visual.", approach: "Mapeamento de jornadas, organização de categorias e prototipação de telas-chave.", deliverables: ["Fluxos de navegação", "Wireframes", "Protótipo de alta fidelidade"] },
   },
   {
-    title: "CELY", category: "Visual Identity", type: "Branding", year: "2024", imageClass: "project-cely", image: "/images/cely-site-cover.webp",
+    title: "CELY", category: "Visual Identity", type: "Branding", year: "2024", imageClass: "project-cely", image: publicImage("cely-site-cover.webp"),
     description: "Identidade visual construída para equilibrar sofisticação, delicadeza e reconhecimento de marca.",
     case: { challenge: "Criar uma presença digital coerente para uma marca voltada à comunidade de criadores.", role: "Direção de arte e design de interfaces.", approach: "Sistema visual escalável, composição editorial e aplicação em landing pages.", deliverables: ["Direção de arte", "Componentes visuais", "Layouts responsivos"] },
   },
   {
-    title: "JJS Canada", category: "Web Design", type: "Website", year: "2023", imageClass: "project-jjs", image: "/images/jjs-canada-cover.webp.webp",
+    title: "JJS Canada", category: "Web Design", type: "Website", year: "2023", imageClass: "project-jjs", image: publicImage("jjs-canada-cover.webp.webp"),
     description: "Website institucional com foco em clareza, posicionamento e experiência digital.", caseUrl: "https://www.behance.net/gallery/220237715/Website-JJS-Canada",
     case: { challenge: "Organizar uma oferta ampla de produtos em uma experiência institucional clara.", role: "UI design, arquitetura de informação e direção visual.", approach: "Hierarquia de conteúdo, navegação orientada por categoria e layouts adaptáveis.", deliverables: ["Arquitetura de informação", "Design responsivo", "Biblioteca de componentes"] },
   },
   {
-    title: "Editorial", category: "Art Direction", type: "Print / Digital", year: "2023", imageClass: "project-editorial", image: "/images/editorial-cover.webp.jpg",
+    title: "Editorial", category: "Art Direction", type: "Print / Digital", year: "2023", imageClass: "project-editorial", image: publicImage("editorial-cover.webp.jpg"),
     description: "Direção visual e composição editorial explorando ritmo, tipografia e narrativa.",
     case: { challenge: "Criar uma narrativa visual memorável para conteúdo editorial.", role: "Conceito, direção de arte e composição.", approach: "Exploração de tipografia, grids e ritmo visual em diferentes pontos de contato.", deliverables: ["Conceito visual", "Sistema editorial", "Peças digitais"] },
   },
