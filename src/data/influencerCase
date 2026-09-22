@@ -1,0 +1,117 @@
+import influencerHero from "../assets/cely-app.jpg";
+
+/*
+  Quando você tiver as imagens internas do case,
+  importe aqui também.
+
+  Exemplo:
+
+  import overviewImage from "../assets/influencer/cely-overview.jpg";
+  import wireframe01 from "../assets/influencer/cely-wireframe-01.jpg";
+  import wireframe02 from "../assets/influencer/cely-wireframe-02.jpg";
+  import final01 from "../assets/influencer/cely-final-01.jpg";
+*/
+
+export const influencerCase = {
+  title: "Cely App",
+
+  category: "UI/UX · DESKTOP PLATFORM",
+
+  year: "2023",
+
+  role: "UX/UI Design",
+
+  platform: "Desktop",
+
+  tools: "Figma",
+
+  heroImage: influencerHero,
+
+  intro:
+    "Uma plataforma desenvolvida para centralizar o gerenciamento de influenciadores, campanhas e informações em um único ambiente.",
+
+  sections: [
+    {
+      id: "project",
+
+      label: "O projeto",
+
+      title:
+        "Uma plataforma pensada para centralizar o gerenciamento de campanhas e influenciadores.",
+
+      text:
+        "A Cely foi estruturada para reunir informações, perfis, campanhas e atividades em uma experiência desktop mais clara e organizada.",
+
+      // image: overviewImage,
+      // imageAlt: "Visão geral da plataforma Cely",
+    },
+
+    {
+      id: "challenge",
+
+      label: "O desafio",
+
+      title:
+        "Transformar complexidade em clareza.",
+
+      text:
+        "O principal desafio foi organizar diferentes camadas de informação sem comprometer a navegação, permitindo acesso rápido às áreas e ações mais importantes.",
+
+      /*
+      images: [
+        {
+          src: wireframe01,
+          alt: "Wireframe da plataforma Cely",
+          caption: "Estrutura inicial",
+        },
+        {
+          src: wireframe02,
+          alt: "Wireframe da área de gerenciamento",
+          caption: "Organização das informações",
+        },
+      ],
+      */
+    },
+
+    {
+      id: "process",
+
+      label: "Processo & decisões",
+
+      title:
+        "Projetando uma experiência orientada à informação.",
+
+      text:
+        "A estrutura da interface foi desenvolvida priorizando hierarquia, consistência e facilidade de acesso às principais funcionalidades.",
+
+      items: [
+        "Hierarquia visual para destacar informações prioritárias",
+        "Navegação clara entre as principais áreas da plataforma",
+        "Organização de filtros, tabelas e conteúdos",
+        "Fluxos mais diretos para tarefas recorrentes",
+      ],
+    },
+
+    {
+      id: "solution",
+
+      label: "Solução",
+
+      title:
+        "Uma interface construída para facilitar decisões.",
+
+      text:
+        "O resultado foi uma estrutura desktop mais organizada e previsível, capaz de acomodar grande volume de informação sem comprometer a leitura e a experiência de uso.",
+
+      /*
+      images: [
+        {
+          src: final01,
+          alt: "Interface final da plataforma Cely",
+          caption: "Interface final",
+        },
+      ],
+      */
+    },
+  ],
+};

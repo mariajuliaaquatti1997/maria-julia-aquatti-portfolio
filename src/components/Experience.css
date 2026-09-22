@@ -1,0 +1,680 @@
+/* =========================================
+   EXPERIENCE — EDITORIAL
+========================================= */
+
+.mj-experience {
+  width: 100%;
+
+  background: #f4eee7;
+  color: #171714;
+
+  padding:
+    72px
+    0
+    120px;
+}
+
+.mj-experience,
+.mj-experience * {
+  box-sizing: border-box;
+}
+
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.mj-experience__inner {
+  width: 100%;
+  max-width: 1520px;
+
+  margin: 0 auto;
+
+  padding:
+    0
+    48px;
+}
+
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.mj-experience__eyebrow {
+  margin:
+    0
+    0
+    72px;
+
+  font-size: 11px;
+  line-height: 1;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.mj-experience__header {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    auto;
+
+  gap: 32px;
+
+  align-items: end;
+
+  margin-bottom: 88px;
+}
+
+.mj-experience__header h2 {
+  margin: 0;
+
+  font-size:
+    clamp(64px, 7vw, 118px);
+
+  line-height: 0.88;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+.mj-experience__range {
+  margin:
+    0
+    0
+    10px;
+
+  font-size: 12px;
+  line-height: 1;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   EXPERIENCE LIST
+========================================= */
+
+.mj-experience__list {
+  width: 100%;
+
+  border-top:
+    1px solid rgba(23, 23, 20, 0.35);
+}
+
+
+/* =========================================
+   EXPERIENCE ITEM
+========================================= */
+
+.mj-experience__item {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    180px
+    minmax(0, 1fr)
+    40px;
+
+  gap: 32px;
+
+  align-items: start;
+
+  padding:
+    34px
+    0;
+
+  border-bottom:
+    1px solid rgba(23, 23, 20, 0.35);
+
+  transition:
+    padding 300ms cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================
+   PERIOD
+========================================= */
+
+.mj-experience__period {
+  margin: 0;
+
+  padding-top: 4px;
+
+  font-size: 12px;
+  line-height: 1.4;
+
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   COMPANY
+========================================= */
+
+.mj-experience__company {
+  min-width: 0;
+}
+
+.mj-experience__company h3 {
+  margin:
+    0
+    0
+    8px;
+
+  font-size:
+    clamp(24px, 2.4vw, 38px);
+
+  line-height: 1;
+
+  letter-spacing: -0.03em;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   ROLE
+========================================= */
+
+.mj-experience__role {
+  margin: 0;
+
+  font-size: 11px;
+  line-height: 1.4;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color:
+    rgba(23, 23, 20, 0.62);
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.mj-experience__description {
+  max-width: 700px;
+
+  margin:
+    18px
+    0
+    0;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  letter-spacing: -0.01em;
+
+  text-transform: none;
+
+  color:
+    rgba(23, 23, 20, 0.72);
+}
+
+
+/* =========================================
+   TAGS
+========================================= */
+
+.mj-experience__tags {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 18px;
+}
+
+.mj-experience__tag {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding:
+    7px
+    10px;
+
+  border:
+    1px solid rgba(23, 23, 20, 0.16);
+
+  border-radius: 999px;
+
+  font-size: 9px;
+  line-height: 1;
+
+  font-weight: 600;
+
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #171714;
+
+  transition:
+    background-color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+    color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.mj-experience__number {
+  justify-self: end;
+
+  padding-top: 4px;
+
+  font-size: 11px;
+  line-height: 1;
+
+  letter-spacing: 0.12em;
+
+  transition:
+    color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================
+   ACID DOT
+========================================= */
+
+.mj-experience__item::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 42px;
+
+  width: 8px;
+  height: 8px;
+
+  background: #c9ff00;
+
+  border-radius: 50%;
+
+  transform:
+    scale(0);
+
+  transform-origin: center;
+
+  transition:
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+
+/* =========================================
+   HOVER
+========================================= */
+
+.mj-experience__item:hover {
+  padding-left: 24px;
+}
+
+.mj-experience__item:hover::before {
+  transform:
+    scale(1);
+}
+
+.mj-experience__item:hover
+.mj-experience__number {
+  color: #536d46;
+
+  transform:
+    translateX(-4px);
+}
+
+.mj-experience__item:hover
+.mj-experience__tag {
+  border-color:
+    rgba(83, 109, 70, 0.35);
+
+  background:
+    rgba(201, 255, 0, 0.18);
+}
+
+
+/* =========================================
+   FULL EXPERIENCE
+========================================= */
+
+.mj-experience__more {
+  margin-top: 48px;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.mj-experience__more-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  color: #171714;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  line-height: 1;
+
+  letter-spacing: 0.12em;
+
+  text-transform: uppercase;
+
+  border-bottom:
+    1px solid #171714;
+
+  padding-bottom: 6px;
+
+  transition:
+    color 300ms cubic-bezier(0.22, 1, 0.36, 1),
+    border-color 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mj-experience__more-link span {
+  transition:
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mj-experience__more-link:hover {
+  color: #536d46;
+
+  border-color: #c9ff00;
+}
+
+.mj-experience__more-link:hover span {
+  transform:
+    translate(4px, -4px);
+}
+
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark-mode .mj-experience {
+  background: #171714;
+  color: #f4eee7;
+}
+
+body.dark-mode .mj-experience__list,
+body.dark-mode .mj-experience__item {
+  border-color:
+    rgba(244, 238, 231, 0.22);
+}
+
+body.dark-mode .mj-experience__role {
+  color:
+    rgba(244, 238, 231, 0.62);
+}
+
+body.dark-mode .mj-experience__description {
+  color:
+    rgba(244, 238, 231, 0.72);
+}
+
+body.dark-mode .mj-experience__tag {
+  color: #f4eee7;
+
+  border-color:
+    rgba(244, 238, 231, 0.18);
+}
+
+body.dark-mode
+.mj-experience__item:hover
+.mj-experience__tag {
+  background:
+    rgba(201, 255, 0, 0.1);
+
+  border-color:
+    rgba(201, 255, 0, 0.38);
+}
+
+body.dark-mode .mj-experience__more-link {
+  color: #f4eee7;
+
+  border-color: #f4eee7;
+}
+
+body.dark-mode .mj-experience__more-link:hover {
+  color: #9eaf91;
+
+  border-color: #c9ff00;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .mj-experience__inner {
+    padding:
+      0
+      32px;
+  }
+
+  .mj-experience__header {
+    grid-template-columns: 1fr;
+
+    align-items: start;
+
+    margin-bottom: 64px;
+  }
+
+  .mj-experience__range {
+    margin: 0;
+  }
+
+  .mj-experience__item {
+    grid-template-columns:
+      130px
+      minmax(0, 1fr)
+      32px;
+
+    gap: 20px;
+
+    padding:
+      32px
+      0;
+  }
+
+  .mj-experience__description {
+    max-width: 620px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .mj-experience {
+    padding:
+      48px
+      0
+      80px;
+  }
+
+  .mj-experience__inner {
+    padding:
+      0
+      20px;
+  }
+
+  .mj-experience__eyebrow {
+    margin-bottom: 48px;
+  }
+
+  .mj-experience__header {
+    margin-bottom: 56px;
+  }
+
+  .mj-experience__header h2 {
+    font-size:
+      clamp(52px, 14vw, 78px);
+  }
+
+  .mj-experience__item {
+    grid-template-columns:
+      minmax(0, 1fr)
+      32px;
+
+    gap: 12px;
+
+    padding:
+      30px
+      0;
+  }
+
+  .mj-experience__period {
+    grid-column:
+      1 / -1;
+
+    margin-bottom: 4px;
+
+    padding-top: 0;
+  }
+
+  .mj-experience__company {
+    grid-column: 1;
+  }
+
+  .mj-experience__number {
+    grid-column: 2;
+    grid-row: 2;
+
+    align-self: start;
+
+    padding-top: 3px;
+  }
+
+  .mj-experience__role {
+    font-size: 10px;
+  }
+
+  .mj-experience__description {
+    max-width: 100%;
+
+    margin-top: 14px;
+
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .mj-experience__tags {
+    gap: 6px;
+
+    margin-top: 16px;
+  }
+
+  .mj-experience__tag {
+    padding:
+      6px
+      8px;
+
+    font-size: 8px;
+  }
+
+  .mj-experience__item:hover {
+    padding-left: 0;
+  }
+
+  .mj-experience__item::before {
+    display: none;
+  }
+
+  .mj-experience__item:hover
+  .mj-experience__number {
+    transform: none;
+  }
+
+  .mj-experience__more {
+    margin-top: 40px;
+
+    justify-content: flex-start;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 420px) {
+
+  .mj-experience__inner {
+    padding:
+      0
+      16px;
+  }
+
+  .mj-experience__header h2 {
+    font-size:
+      clamp(46px, 14vw, 64px);
+  }
+
+  .mj-experience__company h3 {
+    font-size:
+      clamp(24px, 9vw, 32px);
+  }
+
+  .mj-experience__description {
+    font-size: 13px;
+  }
+
+  .mj-experience__tag {
+    font-size: 7.5px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .mj-experience__item,
+  .mj-experience__number,
+  .mj-experience__item::before,
+  .mj-experience__tag,
+  .mj-experience__more-link,
+  .mj-experience__more-link span {
+    transition: none;
+  }
+
+  .mj-experience__item:hover
+  .mj-experience__number {
+    transform: none;
+  }
+
+  .mj-experience__more-link:hover span {
+    transform: none;
+  }
+}

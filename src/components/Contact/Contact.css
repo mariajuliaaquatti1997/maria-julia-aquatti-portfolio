@@ -1,0 +1,504 @@
+/* =========================================
+   CONTACT
+========================================= */
+
+.mj-contact {
+  width: 100%;
+  min-height: 100vh;
+
+  background: #c9ff00;
+  color: #171714;
+
+  padding: 72px 0 40px;
+}
+
+.mj-contact,
+.mj-contact * {
+  box-sizing: border-box;
+}
+
+/* =========================================
+   CONTAINER
+========================================= */
+
+.mj-contact__inner {
+  width: 100%;
+  max-width: 1520px;
+  min-height: calc(100vh - 112px);
+
+  margin: 0 auto;
+  padding: 0 48px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================
+   EYEBROW
+========================================= */
+
+.mj-contact__eyebrow {
+  margin: 0 0 72px;
+
+  font-size: 11px;
+  line-height: 1;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* =========================================
+   HERO
+========================================= */
+
+.mj-contact__hero {
+  width: 100%;
+}
+
+.mj-contact__hero h2 {
+  margin: 0;
+
+  max-width: 1200px;
+
+  font-size: clamp(70px, 9vw, 150px);
+  line-height: 0.82;
+
+  letter-spacing: -0.065em;
+  font-weight: 600;
+
+  text-transform: uppercase;
+}
+
+/* =========================================
+   LOWER CONTENT
+========================================= */
+
+.mj-contact__bottom {
+  width: 100%;
+
+  margin-top: clamp(72px, 10vw, 150px);
+
+  display: grid;
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(320px, 520px);
+
+  gap: 64px;
+
+  align-items: start;
+}
+
+/* INTRO */
+
+.mj-contact__intro p {
+  margin: 0;
+
+  max-width: 430px;
+
+  font-size: 18px;
+  line-height: 1.45;
+
+  letter-spacing: -0.01em;
+}
+
+/* =========================================
+   LINKS
+========================================= */
+
+.mj-contact__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.mj-contact__link-group {
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(23, 23, 20, 0.5);
+}
+
+.mj-contact__link-group:first-child {
+  border-top: 1px solid rgba(23, 23, 20, 0.5);
+}
+
+.mj-contact__link-group > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 10px;
+  line-height: 1;
+
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.mj-contact__link-group a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #171714;
+  text-decoration: none;
+
+  font-size: 20px;
+  line-height: 1.2;
+
+  letter-spacing: -0.02em;
+
+  transition:
+    opacity 250ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mj-contact__link-group a:hover {
+  opacity: 0.55;
+}
+
+.mj-contact__arrow {
+  display: inline-block;
+
+  font-size: 14px;
+
+  transition:
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mj-contact__link-group a:hover .mj-contact__arrow {
+  transform: translate(4px, -4px);
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.mj-contact__footer {
+  width: 100%;
+
+  margin-top: auto;
+  padding-top: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  gap: 32px;
+}
+
+.mj-contact__footer p {
+  margin: 0;
+
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+/* CTA */
+
+.mj-contact__cta {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #171714;
+  text-decoration: none;
+
+  font-size: clamp(20px, 2vw, 30px);
+  line-height: 1;
+
+  letter-spacing: -0.03em;
+
+  border-bottom: 2px solid #171714;
+
+  padding-bottom: 7px;
+}
+
+.mj-contact__cta span {
+  display: inline-block;
+
+  transition:
+    transform 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.mj-contact__cta:hover span {
+  transform: translate(5px, -5px);
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .mj-contact__inner {
+    padding: 0 32px;
+  }
+
+  .mj-contact__hero h2 {
+    font-size: clamp(64px, 11vw, 110px);
+  }
+
+  .mj-contact__bottom {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 48px;
+  }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .mj-contact {
+    min-height: auto;
+
+    padding: 48px 0 32px;
+  }
+
+  .mj-contact__inner {
+    min-height: auto;
+
+    padding: 0 20px;
+  }
+
+  .mj-contact__eyebrow {
+    margin-bottom: 48px;
+  }
+
+  .mj-contact__hero h2 {
+    font-size: clamp(54px, 16vw, 82px);
+    line-height: 0.86;
+  }
+
+  .mj-contact__bottom {
+    margin-top: 72px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 48px;
+  }
+
+  .mj-contact__intro p {
+    font-size: 17px;
+  }
+
+  .mj-contact__links {
+    width: 100%;
+  }
+
+  .mj-contact__link-group a {
+    font-size: 18px;
+  }
+
+  .mj-contact__footer {
+    margin-top: 80px;
+    padding-top: 0;
+
+    flex-direction: column-reverse;
+    align-items: flex-start;
+
+    gap: 40px;
+  }
+}
+/* HERO VISUAL */
+
+.feature-case--freefinder .case-hero__visual {
+  padding: 0;
+  overflow: hidden;
+  background: #e7f6f8;
+}
+
+.feature-case--freefinder .case-hero__visual img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  max-width: none;
+  max-height: none;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* ACCENT COLORS */
+
+.feature-case--freefinder .case-category,
+.feature-case--freefinder .case-section__number,
+.feature-case--freefinder .case-section__label,
+.feature-case--freefinder .case-section__item span {
+  color: #209fc2;
+}
+
+.feature-case--freefinder .case-intro,
+.feature-case--freefinder .case-section__text {
+  color: rgba(23, 23, 20, 0.72);
+}
+
+/* DIVIDERS */
+
+.feature-case--freefinder .case-hero__meta-row,
+.feature-case--freefinder .case-section,
+.feature-case--freefinder .case-section__item {
+  border-color: rgba(32, 159, 194, 0.18);
+}
+
+/* BACK LINK */
+
+.feature-case--freefinder .case-hero__back {
+  color: rgba(23, 23, 20, 0.55);
+}
+
+.feature-case--freefinder .case-hero__back:hover {
+  color: #209fc2;
+}
+
+/* NEXT PROJECT */
+
+.feature-case--freefinder .case-next {
+  background: #209fc2;
+  color: #ffffff;
+}
+
+.feature-case--freefinder .case-next__label,
+.feature-case--freefinder .case-next__content p {
+  color: #e7f6f8;
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .mj-contact__arrow,
+  .mj-contact__cta span {
+    transition: none;
+  }
+
+  .mj-contact__link-group a:hover .mj-contact__arrow,
+  .mj-contact__cta:hover span {
+    transform: none;
+  }
+}
+/* =========================================
+   CONTACT — REFINEMENTS
+========================================= */
+
+.mj-contact {
+  overflow: clip;
+}
+
+.mj-contact__hero h2 {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  text-wrap: balance;
+}
+
+.mj-contact__intro {
+  min-width: 0;
+}
+
+.mj-contact__links {
+  min-width: 0;
+}
+
+.mj-contact__link-group a {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+/* =========================================
+   CONTACT — INTERACTIONS
+========================================= */
+
+.mj-contact__link-group a:focus-visible,
+.mj-contact__cta:focus-visible {
+  outline: 2px solid #171714;
+  outline-offset: 6px;
+}
+
+.mj-contact__link-group a:focus-visible {
+  opacity: 0.55;
+}
+
+.mj-contact__link-group a:focus-visible .mj-contact__arrow,
+.mj-contact__cta:focus-visible span {
+  transform: translate(4px, -4px);
+}
+
+.mj-contact__cta {
+  transition: opacity 250ms ease;
+}
+
+.mj-contact__cta:hover {
+  opacity: 0.65;
+}
+/* =========================================
+   CONTACT — TABLET REFINEMENT
+========================================= */
+
+@media (min-width: 651px) and (max-width: 900px) {
+  .mj-contact__bottom {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 56px;
+  }
+
+  .mj-contact__intro p {
+    max-width: 560px;
+  }
+
+  .mj-contact__links {
+    max-width: 100%;
+  }
+
+  .mj-contact__footer {
+    padding-top: 90px;
+  }
+}
+/* =========================================
+   CONTACT — MOBILE REFINEMENT
+========================================= */
+
+@media (max-width: 650px) {
+  .mj-contact__hero h2 {
+    font-size: clamp(46px, 14vw, 82px);
+    line-height: 0.9;
+    letter-spacing: -0.055em;
+  }
+
+  .mj-contact__bottom {
+    margin-top: 64px;
+  }
+
+  .mj-contact__link-group {
+    padding: 22px 0;
+  }
+
+  .mj-contact__link-group a {
+    font-size: clamp(16px, 4.5vw, 20px);
+  }
+
+  .mj-contact__footer {
+    margin-top: 96px;
+  }
+
+  .mj-contact__cta {
+    font-size: clamp(20px, 6vw, 28px);
+  }
+}
+
+@media (max-width: 380px) {
+  .mj-contact__inner {
+    padding: 0 16px;
+  }
+
+  .mj-contact__hero h2 {
+    font-size: clamp(42px, 13vw, 54px);
+  }
+}
+/* CONTACT — ANCHOR OFFSET */
+
+#contact {
+  scroll-margin-top: 80px;
+}
